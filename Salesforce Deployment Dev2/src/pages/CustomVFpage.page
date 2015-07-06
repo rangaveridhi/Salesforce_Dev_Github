@@ -1,0 +1,8 @@
+<apex:page standardController="Store__c">
+  Store Id : {!Store__c.Name}
+  <apex:pageblock >
+  <apex:pageblocksection >
+  <apex:relatedList list="Shopping_Mall__r"/>
+  </apex:pageblocksection>
+  </apex:pageblock>
+  </apex:page>

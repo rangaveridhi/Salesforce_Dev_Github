@@ -1,0 +1,18 @@
+<apex:page controller="wizardclass" >
+<apex:form >
+<apex:sectionHeader title="Please provide Account Details" subtitle="Step 1 of Wizard"/>
+<apex:pageblock title="Contacts Info">
+ <apex:pageblocksection >
+   <apex:inputfield value="{!c.FirstName}"/>
+   <apex:inputfield value="{!c.LastName}"/>
+   <apex:inputfield value="{!c.Email}"/>
+   <apex:inputfield value="{!c.Phone}"/>
+   <apex:inputfield value="{!c.Fax}"/>
+ </apex:pageblocksection>
+ <apex:pageblockbuttons >
+ <apex:commandButton value="Next" action="{!step3}"/>
+ <apex:commandButton value="Previous" action="{!step1}"/>
+ </apex:pageblockbuttons>
+</apex:pageblock>
+</apex:form>
+</apex:page>

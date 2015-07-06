@@ -1,0 +1,7 @@
+<apex:page standardStylesheets="false" showHeader="false" sidebar="false">
+  <!-- Begin Default Content REMOVE THIS -->
+  <apex:stylesheet value="{!URLFOR($Resource.styles, 'styles.css')}"/>
+  <h1><I>Congratulations!!!!!!!!!!!!!!!!</I></h1>
+  This is my First Visualforce Page: CountSheet    
+  <!-- End Default Content REMOVE THIS -->
+ </apex:page>

@@ -1,0 +1,21 @@
+<apex:page controller="apexclass3">
+<apex:form >
+ <apex:pageblock title="Accounts By Industry">
+  <apex:pageblockButtons >
+   <apex:commandButton value="Energy" action="{!getEnergy}"/>
+   <apex:commandButton value="Construction" action="{!getConstruction}"/>
+   <apex:commandButton value="Hospitality" action="{!getHospitality}"/>
+   
+  </apex:pageblockButtons>
+  <apex:pageblocksection >
+   <apex:pageblocktable value="{!acts}" var="a">
+     <apex:column value="{!a.Name}"/>
+      <apex:column value="{!a.Type}"/>
+       <apex:column value="{!a.Industry}"/>
+        <apex:column value="{!a.Phone}"/>
+         <apex:column value="{!a.FAx}"/>
+   </apex:pageblocktable>
+  </apex:pageblocksection>
+ </apex:pageblock>
+ </apex:form>
+ </apex:page>

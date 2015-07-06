@@ -1,0 +1,39 @@
+<apex:page controller="wizardclass" >
+<apex:form >
+<apex:sectionHeader title="Please Review Details" subtitle="Step 4 of Wizard"/>
+<apex:pageblock title="Account Info">
+ <apex:pageblocksection >
+   <apex:outputfield value="{!a.Name}"/>
+   <apex:outputfield value="{!a.Type}"/>
+   <apex:outputfield value="{!a.Industry}"/>
+   <apex:outputfield value="{!a.Phone}"/>
+   <apex:outputfield value="{!a.Fax}"/>
+ </apex:pageblocksection>
+ </apex:pageblock>
+ <apex:pageblock title="ContactInfo">
+ <apex:pageblocksection >
+   <apex:outputfield value="{!c.FirstName}"/>
+   <apex:outputfield value="{!c.LastName}"/>
+   <apex:outputfield value="{!c.Email}"/>
+   <apex:outputfield value="{!c.Phone}"/>
+   <apex:outputfield value="{!c.Fax}"/>
+ </apex:pageblocksection>
+ </apex:pageblock>
+ <apex:pageblock title="Opportunity Info">
+ <apex:pageblocksection >
+   <apex:outputfield value="{!q.Name}"/>
+   <apex:outputfield value="{!q.Amount}"/>
+   <apex:outputfield value="{!q.CloseDate}"/>
+   <apex:outputfield value="{!q.StageName}"/>
+  </apex:pageblocksection>
+ </apex:pageblock>
+ <apex:pageblock >
+ <apex:pageblockbuttons >
+ <apex:commandButton value="Edit Account " action="{!step2}"/>
+ <apex:commandButton value="Edit Contact" action="{!step2}"/>
+ <apex:commandButton value="Edit Opportunity" action="{!step2}"/>
+ <apex:commandButton value="Save" action="{!saveall}"/>
+ </apex:pageblockbuttons>
+</apex:pageblock>
+</apex:form>
+</apex:page>

@@ -1,0 +1,5 @@
+<apex:page >
+  <apex:composition template="tempVFPage">
+ 
+  </apex:composition>
+</apex:page>

@@ -1,0 +1,12 @@
+<apex:page sidebar="false">
+  <!-- Begin Default Content REMOVE THIS -->
+ <apex:Pageblock title="My Block">
+  <apex:PageblockSection title="Hello Section" collapsible="false">
+  <h1>Hi {!$User.FirstName} {!$User.LastName}</h1><p></p>
+ </apex:PageblockSection>
+ <apex:PageblockSection title="Hello Section">
+  This is your new Page
+  <!-- End Default Content REMOVE THIS -->
+ </apex:PageblockSection>
+ </apex:Pageblock> 
+</apex:page>

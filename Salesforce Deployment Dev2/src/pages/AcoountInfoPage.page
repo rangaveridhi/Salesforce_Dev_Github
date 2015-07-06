@@ -1,0 +1,28 @@
+<apex:page standardController="Account" sidebar="false">
+  <apex:pageblock title="Account Info">
+  <apex:pageblockSection title="Basic Info">
+  <h1>Account Name : {!Account.Name}<p/></h1>
+  <h1>Account Type: {!Account.Type}<p/></h1>
+  <h1>Account Industry : {!Account.Industry}<p/></h1>
+  </apex:PageblockSection>
+   <apex:pageblockSection title="Contact Info">
+  <h1>Account Phone : {!Account.Phone}<p/></h1>
+  <h1>Account Fax : {!Account.Fax}<p/></h1>
+  </apex:pageblockSection>
+  <apex:pageblocksection title="Detail Info">
+    </apex:pageblocksection>
+     </apex:pageblock>
+     <apex:form >
+     <apex:pageblock title="Edit Section">
+      <apex:inputfield value="{!Account.Name}"/><p/>
+      <apex:inputfield value="{!Account.Type}"/><p/>
+      <apex:inputfield value="{!Account.Industry}"/><p/>
+      <apex:inputfield value="{!Account.Phone}"/><p/>
+      <apex:inputfield value="{!Account.Fax}"/><p/>
+           </apex:pageblock>
+           <apex:commandButton action="{!QuickSave}" value="Save This Now"/>
+           <apex:commandLink action="{!QuickSave}" value="Save Link"/>
+           
+  </apex:form>
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

@@ -1,0 +1,21 @@
+<apex:page standardController="Account">
+  <!-- Begin Default Content REMOVE THIS -->
+  <h2>Congratulations!!!!!!!!!!!!!!!!!!!!!!!</h2>
+   <apex:pageBlock title="Hello {!$User.LastName} {!$User.FirstName} " >
+  
+  <p>You are viewing the {!account.name} account.</p>
+  <apex:detail subject="{!account.ownerId}" relatedList="false" title="false"/>
+  <apex:form >
+  <apex:pageblocksection title="Details"><p/>
+  </apex:pageblocksection>
+  <apex:InputText >
+  FirstName:
+  </apex:InputText><p/>
+   <apex:InputText >
+  LastName:
+  </apex:InputText><p/>
+  <apex:commandButton action="{!save}" value="Submit"/> 
+   </apex:form>
+  
+  </apex:pageBlock><!-- End Default Content REMOVE THIS -->
+</apex:page>

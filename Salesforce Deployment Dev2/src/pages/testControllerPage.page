@@ -1,0 +1,12 @@
+<apex:page controller="apexclass1">
+ <h1> Good Morning Everyone</h1><p/>
+ 
+ {!str}<p/>
+ 
+ <apex:pageblock title="Name">
+ {!act.Name}
+ </apex:pageblock>
+ <apex:pageblock title="Type">
+ {!act.Type}
+ </apex:pageblock>
+</apex:page>
